@@ -10,8 +10,10 @@ public class SolarSystem2A{
 
         System.out.println( "Enter the number of solar panels:");
         int panels= sc.nextInt();
+        
+        System.out.println("Enter system status (A-active U-unactive)");
+        char SystemStatus= sc.next().charAt(0);
 
-        char SystemStatus= 'A';
         System.out.println("-----SOLAR ENERGY SYSTEM----");
         System.out.println("Panel ID= " + id);
         System.out.println("Energy generated: " + energy);
