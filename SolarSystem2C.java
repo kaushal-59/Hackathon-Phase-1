@@ -1,9 +1,17 @@
+import java.util.Scanner;
 class SolarSystem2C{
     static double calculateTotalEnergy(double morningEnergy , double eveningEnergy){
         return morningEnergy + eveningEnergy;
     }
     public static void main(String[] args){
-        double totalEnergy=calculateTotalEnergy(2.5 , 3.1);
+        Scanner sc= new Scanner(System.in);
+
+        System.out.println("Enter morning energy");
+        double morningEnergy= sc.nextDouble();
+        
+        System.out.println("Enter evening energy:");
+        double eveningEnergy= sc.nextDouble();
+        double totalEnergy= calculateTotalEnergy(morningEnergy , eveningEnergy);
         System.out.println(totalEnergy);
     }
 }
