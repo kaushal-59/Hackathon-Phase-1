@@ -46,13 +46,13 @@ class BankAccount{
              sc.nextLine(); 
 
         System.out.print("Enter Account Holder Name: ");
-        String accountHolderName = sc.nextLine();
+        String accountHolderName= sc.nextLine();
 
         System.out.print("Enter Initial Balance: ");
         double balance= sc.nextDouble();
 
         
-        BankAccount account = new BankAccount(
+        BankAccount account= new BankAccount(
             accountNumber,
             accountHolderName,
             balance
@@ -60,12 +60,12 @@ class BankAccount{
 
         
         System.out.print("Enter Deposit Amount: ");
-        double depositAmount = sc.nextDouble();
+        double depositAmount= sc.nextDouble();
         account.deposit(depositAmount);
 
         
         System.out.print("Enter Withdrawal Amount: ");
-        double withdrawAmount = sc.nextDouble();
+        double withdrawAmount= sc.nextDouble();
         account.withdraw(withdrawAmount);
 
         
